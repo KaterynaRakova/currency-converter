@@ -1,4 +1,5 @@
-package currencyClientApp;
+package com.example.currencyClientApp.service;
+import com.example.currencyClientApp.provider.RateProvider;
 import org.springframework.stereotype.Service;
 import java.util.Collections;
 import java.util.Map;

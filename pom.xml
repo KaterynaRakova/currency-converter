@@ -69,7 +69,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>3.2.5</version>
                 <configuration>
-                    <mainClass>currencyClientApp.CurrencyClient</mainClass>
+                    <mainClass>com.example.currencyClientApp.CurrencyClient</mainClass>
                 </configuration>
             </plugin>
         </plugins>

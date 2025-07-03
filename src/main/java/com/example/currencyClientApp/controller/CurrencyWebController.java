@@ -1,5 +1,6 @@
-package currencyClientApp;
+package com.example.currencyClientApp.controller;
 
+import com.example.currencyClientApp.service.CurrencyService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="cover.png" alt="Currency Converter" width="100%">
+</p>
 # 💱 Currency Converter Web App
 
 A Java Spring Boot web application that fetches real-time exchange rates from the [OpenExchangeRates API](https://openexchangerates.org/) and converts currency values between supported currencies via a simple web interface.

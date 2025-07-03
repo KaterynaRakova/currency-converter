@@ -1,5 +1,9 @@
 package currencyClientApp;
 
+import com.example.currencyClientApp.service.CurrencyService;
+import com.example.currencyClientApp.controller.CurrencyWebController;
+import com.example.currencyClientApp.service.ExchangeRates;
+import com.example.currencyClientApp.provider.RateProvider;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.ui.ConcurrentModel;
@@ -7,7 +11,6 @@ import org.springframework.ui.Model;
 
 import java.util.Map;
 import java.util.Optional;
-import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;

@@ -1,39 +1,38 @@
-/* Фон и базовые настройки */
+/* 📱 1. Адаптивный фон и базовые настройки */
 body {
     background-color: rgb(252, 194, 3);
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 40px 0;
+    padding: 40px 10px; /* уменьшили боковые отступы на мобилках */
     display: flex;
     justify-content: center;
 }
-/* Основной белый блок */
+
+/* 🧱 2. Основной блок */
 .container {
-    background: rgba(252, 194, 3, 0.85); /* Полупрозрачный жёлтый */
-    border: 5px solid #000;              /* Чёрная рамка */
+    background: rgba(252, 194, 3, 0.85);
+    border: 5px solid #000;
     border-radius: 12px;
-    padding: 25px 30px;                  /* Чуть меньше отступы */
-    min-width: 180px;                    /* Уменьшаем форму */
-    max-width: 240px;
+    padding: 25px 30px;
     width: 100%;
+    max-width: 320px;     /* увеличили максимальную ширину немного */
+    min-width: 200px;
     text-align: center;
-    font-size: 0.65em; /* 👈 уменьшает всё внутри на ~8% */
-    /* Более выразительная глубокая тень */
+    font-size: 0.9em;      /* сделаем текст чуть крупнее для удобства */
     box-shadow: 0 0 25px 6px rgba(0, 0, 0, 0.8);
 }
-/* Заголовок */
 
+/* 🧭 3. Заголовок */
 h2 {
-    margin-top: 3px;                       /* 👈 немного поднимаем вверх */
-    margin-bottom: 20px;                     /* 👈 увеличиваем расстояние до формы */
+    margin-top: 5px;
+    margin-bottom: 20px;
     color: #000;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
     font-size: 1.8em;
     font-weight: bold;
 }
 
-
-/* Поля формы */
+/* 📝 4. Поля формы */
 input, select, button {
     margin: 10px 0;
     padding: 10px;
@@ -42,7 +41,7 @@ input, select, button {
     box-sizing: border-box;
 }
 
-/* Кнопка */
+/* 🖱 5. Кнопка */
 button {
     background-color: #222;
     color: white;
@@ -56,13 +55,45 @@ button:hover {
     background-color: #444;
 }
 
-/* Результат конвертации */
+/* 🧾 6. Результат */
 p {
     margin-top: 20px;
     font-size: 1.1em;
 }
 
 #result p {
-  white-space: normal;
-  overflow: visible;
+    white-space: normal;
+    overflow: visible;
 }
+
+/* 📲 7. Адаптация под маленькие экраны */
+@media (max-width: 480px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    .container {
+        padding: 20px;
+        font-size: 1em;         /* нормальный размер текста на мобилках */
+        max-width: 100%;
+        border-width: 3px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    input, select, button {
+        font-size: 1em;
+    }
+
+    button {
+        padding: 12px;
+    }
+}
+
+
+
+
+
+

@@ -1,5 +1,7 @@
-package currencyClientApp;
+package com.example.currencyClientApp.provider;
 
+import com.example.currencyClientApp.provider.RateProvider;
+import com.example.currencyClientApp.service.ExchangeRates;
 import com.google.gson.Gson;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;

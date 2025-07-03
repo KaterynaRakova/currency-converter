@@ -1,4 +1,4 @@
-package currencyClientApp;
+package com.example.currencyClientApp.service;
 
 import java.util.Map;
 

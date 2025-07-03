@@ -1,5 +1,8 @@
 package currencyClientApp;
 
+import com.example.currencyClientApp.service.CurrencyService;
+import com.example.currencyClientApp.service.ExchangeRates;
+import com.example.currencyClientApp.provider.RateProvider;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
