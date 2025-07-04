@@ -35,10 +35,9 @@
   window.location.href='/convert';
   }
   </script>
-    <!-- Ошибка -->
+
     <p th:if="${error}" th:text="${error}" style="color:red; font-weight: bold; margin-top: 15px;"></p>
 
-    <!-- Результат -->
     <div id="result" th:if="${convertedAmount != null}">
         <p>
             <strong th:text="${amount}">amount</strong>

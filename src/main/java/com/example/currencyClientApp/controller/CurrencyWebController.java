@@ -57,7 +57,7 @@ public class CurrencyWebController {
                     "&to=" + to +
                     "&amount=" + amount +
                     "&result=" + result.get();
-            //return "redirect:/convert?result=" + result.get();
+
         } else {
             return "redirect:/convert?error=Invalid+input.+Please+check+currency+and+try+again." +
                     "&from=" + from + "&to=" + to + "&amount=" + amount;
